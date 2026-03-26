@@ -34,6 +34,7 @@ class MovieBrief(BaseModel):
     release_year: int | None = Field(default=None, description="개봉 연도")
     rating: float | None = Field(default=None, description="평균 평점 (0.0~10.0)")
     poster_url: str | None = Field(default=None, description="포스터 이미지 전체 URL")
+    trailer_url: str | None = Field(default=None, description="예고편 URL")
     overview: str | None = Field(default=None, description="줄거리 요약")
 
     class Config:
